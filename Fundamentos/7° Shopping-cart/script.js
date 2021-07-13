@@ -58,7 +58,7 @@ function createCartItemElement({ id: sku, title: name, price: salePrice }) {
   li.className = 'cart__item';
   li.id = sku;
   li.innerText = `SKU: ${sku} | NAME: ${name} | PRICE: $${salePrice}`;
-  li.addEventListener('click', cartItemClickListener);// cartItemClickListener função para remover ?;
+  li.addEventListener('click', cartItemClickListener);
   return li;
 }
 
@@ -72,11 +72,11 @@ const fetchSelectItem = (id) => new Promise((resolve, reject) => {
 });
 
 const takeIdName = (event) => {
-  let elementPrevius = event.target.previousSibling;
-  while (elementPrevius.className !== 'item__sku') {
-    elementPrevius = elementPrevius.previousSibling;
-  }
-  const id = elementPrevius.innerText;
+  const elementPrevius = event.target.parentElement;
+  const id = elementPrevius.querySelector('.item__sku').innerText;
+  // while (elementPrevius.className !== 'item__sku') {
+  //   elementPrevius = elementPrevius.previousSibling;
+  // }
   fetchSelectItem(id)
     .then((obj) => {
       const objc = createCartItemElement(obj);
