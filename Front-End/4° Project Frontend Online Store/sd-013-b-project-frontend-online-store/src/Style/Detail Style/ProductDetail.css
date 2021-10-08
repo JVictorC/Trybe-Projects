@@ -1,0 +1,35 @@
+.header-detail {
+  align-items: center;
+  border-bottom: 5px solid green;
+  display: flex;
+  height: 130px;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.item-detail {
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 128, 0, 0.493);
+  display: flex;
+  flex-flow: column wrap;
+  height: 80vh;
+  justify-content: space-evenly;
+  margin: 15px;
+  text-align: center;
+  width: 80%;
+}
+
+.item-detail .img-thumbnail {
+  width: 30%;
+}
+
+.form-avaliation {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 30px;
+}
+
+.div-form {
+  box-shadow: 0 0 10px rgba(0, 128, 0, 0.493);
+  width: 80%;
+}

@@ -1,0 +1,84 @@
+.header-checkout {
+  background-color: white;
+  border-bottom: 5px solid green;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+}
+
+.container-checkout {
+  display: flex;
+}
+
+.content-checkout {
+  align-items: center;
+  border-bottom: 3px solid green;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin: 25px;
+  margin-top: 100px;
+  padding: 25px;
+  width: 100%;
+}
+
+.product-checkout {
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 128, 0, 0.486);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin: 25px;
+  text-align: center;
+  width: 80%;
+}
+
+.img-thumbnail {
+  max-width: 200px;
+}
+
+.form-control { width: 90%; }
+
+.form-select { width: 90%;}
+
+.form-checkout {
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 35px;
+  width: 100%;
+}
+
+.data-user {
+  width: 80%;
+}
+
+.methods {
+  width: 100%;
+}
+
+.input-radio {
+  align-items: center;
+  display: flex;
+}
+
+.label-radio {
+  font-size: 25px;
+  margin: 15px;
+  padding: 10px;
+  transition: 0.5s;
+}
+
+.label-radio:hover {
+  border-bottom: 5px solid green;
+  border-radius: 20px;
+  border-top: 5px solid green;
+  transform: scale(1.03);
+}
+
+.button-buy {
+  margin: auto;
+  width: 50%;
+}

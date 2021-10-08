@@ -1,0 +1,171 @@
+.grid-container {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.barsearch {
+  align-content: center;
+  align-items: center;
+  background-color: white;
+  border-bottom: 5px solid green;
+  display: flex;
+  height: 150px;
+  justify-content: space-around;
+  padding: 25px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.form-search {
+  display: flex;
+  width: 50%;
+}
+
+.form-control {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.category-container {
+  font-size: 15px;
+  max-width: 350px;
+  width: 23%;
+}
+
+.Link-Cart {
+  text-decoration: none;
+}
+
+.categorys {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-flow: column wrap;
+  height: 1500px;
+  margin-left: 25px;
+
+}
+
+.categorys input {
+  margin: 10px;
+}
+
+.categorys label:hover {
+  transform: scale(1.05);
+}
+
+.Product-Show {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 200px;
+}
+
+.product-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.product-container {
+  max-width: 77%;
+}
+
+.img-thumbnail {
+  width: 50%;
+}
+
+.product {
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  margin: 15px;
+  padding: 15px;
+  text-align: center;
+  width: 300px;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  align-items: center;
+  border-top: 5px solid  green;
+  display: flex;
+  flex-flow: column wrap;
+  min-height: 250px;
+}
+
+footer nav {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-around;
+  margin: 15px;
+  width: 100%;
+}
+
+.links {
+  background-color: transparent;
+  border: none;
+  color: black;
+  padding: 0;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+@media ( min-width : 600px ) {
+
+  .links {
+    font-size: 15px;
+  }
+}
+
+.links:hover {
+  border-bottom: 3px solid green;
+  color: green;
+  font-weight: 400;
+  padding: 0;
+  transform: scale(1.3);
+}
+
+.select {
+  border-bottom: 3px solid green;
+  color: green;
+  transform: scale(1.3);
+}
+
+.dados-dev {
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+
+}
+
+.container-loading {
+  align-items: center;
+  display: flex;
+  font-size: 150px;
+  justify-content: center;
+  width: 75%;
+}
+
+.loading {
+  animation: myRotation 1s infinite linear;
+  color: green;
+  font-size: 100px;
+}
+
+@keyframes myRotation {
+
+  to {
+    transform: rotate(0deg);
+  }
+
+  from {
+    transform: rotate(360deg);
+  }
+}

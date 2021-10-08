@@ -1,0 +1,54 @@
+// Css inspirado no video https://www.youtube.com/watch?v=UCMNYTid070&ab_channel=Bedimcode
+  
+.form-login-container
+  display: flex
+  justify-content: center
+  aling-item: center
+  flex-direction: column
+  height: 100vh
+  background: #303030
+
+  p
+    color: #303030
+
+.form
+  &-login
+    margin: auto
+    width: 360px
+    padding: 4rem 2rem
+    border-radius: 1rem
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2)
+    background: white
+
+  &-title
+    font-weight: 400
+    margin-bottom: 3rem
+
+  &-email
+    @include inputLogin
+
+  &-password
+    @include inputLogin
+
+.form-input
+  @include styleIputs
+  transition: .5s
+
+.form-label
+  @include styleLabel
+  transition: .5s
+
+.form-input:focus + .form-label
+  top: -.5rem
+  left: .8rem
+  color: $first-color
+  font-size: $small-font-size
+  font-weight: 500
+  z-index: 10
+
+.form-input:not(:focus)+ .form-label
+  top: -.5rem
+  left: .8rem
+  font-size: $small-font-size
+  font-weight: 500
+  z-index: 10

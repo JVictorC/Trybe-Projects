@@ -1,0 +1,51 @@
+.header-cart {
+  align-items: center;
+  border-bottom: 5px solid green;
+  display: flex;
+  height: 80px;
+  justify-content: space-around;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+.item {
+  align-items: center;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+  display: flex;
+  flex-flow: column wrap;
+  height: auto;
+  justify-content: center;
+  margin: 50px;
+  padding: 15px;
+  text-align: center;
+  width: 350px;
+}
+
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.img-thumbnail {
+  width: 50%;
+}
+
+.quantity {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.button-large {
+  margin: 15px 0;
+  width: 100%;
+}
+
+footer {
+  margin-top: 50px;
+}

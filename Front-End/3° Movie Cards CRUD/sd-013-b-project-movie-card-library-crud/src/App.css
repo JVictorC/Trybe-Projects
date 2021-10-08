@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #303030;
+  color: white;
+}
+
+.movies-list {
+  margin: 25px 0;
+  text-align: center;
+}

@@ -1,0 +1,64 @@
+body
+  background: #303030
+  color: white
+
+header
+  display: flex
+  justify-content: space-around
+  color: white
+  background: $first-color
+  margin-bottom: 50px
+  border-bottom: 10px solid white
+  align-items: center
+
+.header-container
+  width: 100%
+
+.header
+  &-animation
+    order: -1
+
+  &-email
+    text-transform: uppercase
+
+  &-infos-money
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  &-form
+    display: flex
+    justify-content: center
+    align-items: center
+
+    input, select
+      border: none
+      outline: none
+      height: 30px
+      min-width: 100px
+      border-radius: 20px
+      margin: 1rem
+      color: black
+
+    label
+      display: flex
+      align-items: center
+      justify-content: center
+
+.conteiner-table   
+  &-main
+    width: 100%
+    text-align: center
+    border-bottom: 5px solid white
+    min-height: 50vh
+    padding: 3rem 0
+
+  &-cells
+    margin: 2rem
+    text-align: center
+    max-height: 50px
+    border-bottom: 5px solid white
+    
+  .buttons
+    display: flex
+    justify-content: center
