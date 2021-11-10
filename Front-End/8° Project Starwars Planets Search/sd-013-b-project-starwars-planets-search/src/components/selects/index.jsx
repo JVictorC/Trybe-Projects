@@ -65,7 +65,6 @@ export default function Selects() {
                 <p>{valueFilter}</p>
                 <button
                   type="button"
-                  data-testid="filter"
                   onClick={ () => handleClearFilter({ column, comparison, value }) }
                 >
                   X
@@ -74,7 +73,6 @@ export default function Selects() {
             ))
           }
         </ul>
-
         {/* <button
           type="button"
           data-testid="filter"
