@@ -1,0 +1,44 @@
+@use '../0-bases/mixins' as mixin
+@use '../0-bases/variables' as var
+
+.container
+  &-header
+    @include mixin.display-flex($j: center, $d: column)
+    margin-bottom: 2rem
+    border-radius: 25px
+    padding: 1rem
+    border-bottom: 15px solid var.$shadow-red-color
+    color: var.$shadow-red-color
+
+    &-nav
+      @include mixin.display-flex($j: space-around)
+      width: 100%
+
+  .effet-toggle
+    padding: .5rem 1.5rem
+    cursor: pointer
+
+  @for $i from 1 through 2
+    &:nth-child(#{$i}n)
+      img
+        width: 40px
+        &::after
+          @if $i == 1
+            content: 'Perfil'
+          @else
+            content: 'Pesquisar'
+            position: relative
+            left: -100px
+            transition: .5s
+            color: white
+            font-size: 0
+            margin: 1rem
+
+            &:hover::after
+              left: 0
+              color: var.$shadow-red-color
+              font-size: 1.5rem
+
+            &:hover
+              border-bottom: 5px solid var.$main-red-color
+              border-radius: 25px

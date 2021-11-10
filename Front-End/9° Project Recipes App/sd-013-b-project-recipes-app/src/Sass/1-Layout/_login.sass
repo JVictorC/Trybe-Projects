@@ -1,0 +1,24 @@
+@use '../0-bases/mixins' as mixin
+  
+  
+.containerLogin
+  @include mixin.display-flex($j: center, $d: column)
+  height: 100vh
+
+  @include mixin.MediumScreen
+    @include mixin.display-flex($j: space-evenly, $d: row, $w: wrap)
+  
+    
+
+.image-login
+  width: 50%
+  margin-bottom: 1rem
+
+  @include mixin.MediumScreen()
+    width: 30%
+
+  
+.containerFormLogin
+  @include mixin.display-flex($d: column, $j: space-around)
+  height: 50%
+  

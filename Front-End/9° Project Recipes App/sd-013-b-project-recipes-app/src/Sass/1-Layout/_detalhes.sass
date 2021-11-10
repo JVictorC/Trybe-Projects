@@ -1,0 +1,45 @@
+@use '../0-bases/_mixins' as mixin
+@use '../0-bases/_variables' as var
+
+.main-container
+  &-details
+    display: flex
+    flex-direction: column
+    text-align: center
+
+    @include mixin.MediumScreen()
+      width: 80%
+
+  &-details
+    width: 100%
+    border-radius: 20px
+    margin-bottom: 2rem
+
+    @include mixin.MediumScreen()
+      width: 50%
+      border-radius: 50%
+
+  &-apresetation
+    display: flex
+    flex-flow: column wrap
+    align-items: center
+    margin-bottom: 2rem
+
+.recomendation-card
+  display: flex
+  flex-direction: column
+  margin: 10px
+  width: 45vw
+
+.img-recomendation
+  height: auto
+  width: auto
+
+.recomendation-carousel
+  display: flex
+  overflow-y: auto
+
+.start-recipe-btn
+  bottom: 0
+  width: 100%
+  position: fixed
